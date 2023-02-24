@@ -36,9 +36,21 @@
 ;; Load the core
 (require 'adc-core-custom)
 (require 'adc-core-utils)
+(require 'adc-core-packages)
+(require 'adc-core-package-overrides)
+(require 'adc-core-performance)
+(require 'adc-core-env)
+(require 'adc-core-ui)
+(require 'adc-core-editor)
+(require 'adc-core-linux)
 
 ;; Config changes made through the customize UI will be stored here
 (setq custom-file (adc-dir "custom.el"))
 (load-file custom-file)
+
+;; Continue loading core
+(require 'adc-core-themes)
+(require 'adc-core-vendor)
+(require 'adc-core-modules)
 
 (provide 'adc-core-init)

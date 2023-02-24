@@ -21,7 +21,7 @@ Only modes that do not derive from `prog-mode` should be listed here."
   :type '(repeat symbol)
   :group 'adc)
 
-(defcustom adc-transparency-level 90
+(defcustom adc-transparency-level 95
   "The default frame transparency level."
   :type 'number
   :group 'adc)

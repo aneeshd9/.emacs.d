@@ -1,3 +1,8 @@
 auto-save-list/
 cache/
+.cache/
 eln-cache/
+tree-sitter/
+straight/
+.lsp-session-v1
+projectile-bookmarks.eld

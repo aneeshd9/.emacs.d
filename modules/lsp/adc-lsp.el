@@ -49,20 +49,20 @@
   (read-process-output-max (* 1024 1024))
   
   :preface
-  (defun siren-lsp-mode-setup ()
+  (defun adc-lsp-mode-setup ()
     (setq-local company-idle-delay 0.1
                 company-minimum-prefix-length 1))
 
-  (defvar-local siren-lsp-manual-format-buffer-func nil)
-  (defun siren-lsp-manual-format-buffer ()
+  (defvar-local adc-lsp-manual-format-buffer-func nil)
+  (defun adc-lsp-manual-format-buffer ()
     "Intended for manual formatting triggering, e.g. C-c C-f.
 Supports overriding the default formatting function by setting the
 `siren-lsp-manual-format-buffer-func' buffer-local variable.
 Typically this will be used to perform additional formatting
 steps not performed by default via the on-save hook."
     (interactive)
-    (if siren-lsp-manual-format-buffer-func
-        (apply siren-lsp-manual-format-buffer-func nil)
+    (if adc-lsp-manual-format-buffer-func
+        (apply adc-lsp-manual-format-buffer-func nil)
       (lsp-format-buffer)))
 
   :config

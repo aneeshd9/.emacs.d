@@ -2,6 +2,7 @@ auto-save-list/
 cache/
 .cache/
 eln-cache/
+transient/
 tree-sitter/
 straight/
 .lsp-session-v1

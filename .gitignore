@@ -3,6 +3,7 @@ cache/
 .cache/
 eln-cache/
 transient/
+tramp
 tree-sitter/
 straight/
 .lsp-session-v1

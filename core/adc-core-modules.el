@@ -27,13 +27,18 @@
 (require 'adc-display-indentation)
 (require 'adc-display-line-numbers)
 (require 'adc-whichkey)
-;; (require 'adc-tree-sitter)
+(require 'adc-minions)
 
 ;; Linting
 (require 'adc-flycheck)
 
 ;; Misc
 (require 'adc-restart-emacs)
+
+;; Navigation
+(require 'adc-consult)
+(require 'adc-helm)
+(require 'adc-isearch)
 
 ;; Project management
 (require 'adc-editorconfig)
@@ -42,6 +47,8 @@
 
 ;; Language servers
 (require 'adc-lsp)
+(require 'adc-consult-lsp)
+(require 'adc-helm-lsp)
 
 ;; Debugging
 (require 'adc-dap)
@@ -49,6 +56,9 @@
 ;; Shell
 (require 'adc-vterm)
 (require 'adc-shell-pop)
+
+;; Text-editing
+(require 'adc-smartparens)
 
 ;; Widgets
 (require 'adc-xwwp)
